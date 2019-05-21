@@ -14,12 +14,7 @@ Install-Package Wc.ToasterWebforms -Version 1.0.0.2
 
 Primeiro você deverá baixar e instalar as dependências Javascript [Jquery-Toast-Plugin](https://github.com/kamranahmedse/jquery-toast-plugin/)
 
-#### Instalando o 
-
-1. Adicione o arquivo jquery.toast.min.css no <head>.
-2. Adicione o arquivo jquery.toast.min.js no final .
-
-#### Usando no code-behind
+#### Code-behind
 
 ```c#
 using Wc.ToasterWebforms
