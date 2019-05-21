@@ -4,7 +4,7 @@ Esta é uma biblioteca que permite controlar a exibição de mensages Toast pelo
 
 ## Instalação
 
-Use nuget package manager [ToastWebforms](https://www.nuget.org/packages/Wc.ToasterWebforms/) to install a biblitoeca.
+Use nuget package manager [ToastWebforms](https://www.nuget.org/packages/Wc.ToasterWebforms/) para instalar a biblitoeca.
 
 ```bash
 Install-Package Wc.ToasterWebforms -Version 1.0.0.2
