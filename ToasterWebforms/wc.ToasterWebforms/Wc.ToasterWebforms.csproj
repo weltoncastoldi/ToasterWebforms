@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Welton Castoldi</Authors>
+    <PackageProjectUrl>https://github.com/weltoncastoldi/ToasterWebforms</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/weltoncastoldi/ToasterWebforms</RepositoryUrl>
+    <PackageTags>Toaster, Jquery, Asp.net, Webforms, .net Standart 2.0</PackageTags>
+    <NeutralLanguage>pt-BR</NeutralLanguage>
+    <Description>Está biblioteca tem porque objetivo facilitar a chamadas javascript de mensagens toaster pelo code-behind de páginas asp.net webforms</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Product>ToasterWebforms</Product>
+    <AssemblyName>Wc.ToasterWebforms</AssemblyName>
+    <RootNamespace>Wc.ToasterWebforms</RootNamespace>
+  </PropertyGroup>
+
+</Project>
