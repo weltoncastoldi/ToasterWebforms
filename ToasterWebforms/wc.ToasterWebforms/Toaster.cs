@@ -7,10 +7,12 @@ namespace Wc.ToasterWebforms
     public class Toaster : IToaster
     {
         /// <summary>
-        /// Adiciona uma mensagem Toaster. Baseado na Biblioteca Jquery Toast Plugin
-        /// https://kamranahmed.info/toast#quick-demos
+        /// <para>MENSAGEM TOAST</para>
+        /// <para>Baseado na Biblioteca Jquery Toast Plugin</para>
+        /// <para>https://kamranahmed.info/toast#quick-demos</para>
         /// </summary>
-        /// <param name="titulo"> Propriedade: {heading} Titulo da mensagem.</param>
+        /// <param name="titulo"> ToastJs: {heading} - string: Titulo da mensagem.</param>
+        /// <returns>Retorna string javascript do Toast</returns>  
         public string AdicionarMensagemToaster(string titulo)
         {
             var sb = new StringBuilder();
@@ -21,12 +23,13 @@ namespace Wc.ToasterWebforms
         }
 
         /// <summary>
-        /// Adiciona uma mensagem Toaster. Baseado na Biblioteca Jquery Toast Plugin
-        /// https://kamranahmed.info/toast#quick-demos
+        /// <para>MENSAGEM TOAST</para>
+        /// <para>Baseado na Biblioteca Jquery Toast Plugin</para>
+        /// <para>https://kamranahmed.info/toast#quick-demos</para>
         /// </summary>
-        /// <param name="titulo">Propriedade: {heading} - Título da mensagem</param>
-        /// <param name="mensagem">Propriedade: {text} - Mensagem do corpo do Toaster.</param>
-        /// <param name="icone">Propriedade: {icon} - Define o ícone e cor do Toast use: info, warning, error, success</param>
+        /// <param name="titulo"> ToastJs: {heading} - string: Titulo da mensagem.</param>
+        /// <param name="mensagem">ToastJs: {text} - string: Mensagem do corpo do Toaster.</param>
+        /// <param name="icone">ToastJs: {icon} - string: info, warning, error, success</param>
         public string AdicionarMensagemToaster(string titulo, string mensagem, string icone)
         {
             var sb = new StringBuilder();
@@ -39,14 +42,15 @@ namespace Wc.ToasterWebforms
         }
 
         /// <summary>
-        /// Adiciona uma mensagem Toaster. Baseado na Biblioteca Jquery Toast Plugin
-        /// https://kamranahmed.info/toast#quick-demos
+        /// <para>MENSAGEM TOAST</para>
+        /// <para>Baseado na Biblioteca Jquery Toast Plugin</para>
+        /// <para>https://kamranahmed.info/toast#quick-demos</para>
         /// </summary>
-        /// <param name="titulo">Propriedade: {heading} - Título da mensagem</param>
-        /// <param name="mensagem">Propriedade: {text} - Mensagem do corpo do Toaster.</param>
-        /// <param name="icone">Propriedade: {icon} - Define o ícone e cor do Toast use: info, warning, error, success</param>
-        /// <param name="posicao">Propriedade: {position} - Define posição da mensagem, use: bottom-left or bottom-right or bottom-center or top-left or top-right or top-center or mid-center or an object representing the left, right, top, bottom</param>
-        /// <param name="tempoExibicaoMilisegundos">Propriedade: {hideAfter} - Define o tempo de exibição do Toast</param>
+        /// <param name="titulo"> ToastJs: {heading} - string: Titulo da mensagem.</param>
+        /// <param name="mensagem">ToastJs: {text} - string: Mensagem do corpo do Toaster.</param>
+        /// <param name="icone">ToastJs: {icon} - string: info ou warning ou error ou success</param>
+        /// <param name="posicao">ToastJs: {position} - string: bottom-left ou bottom-right ou bottom-center ou top-left ou top-right ou top-center ou mid-center ou an object representing the left, right, top, bottom</param>
+        /// <param name="tempoExibicaoMilisegundos">ToastJs: {hideAfter} - int: tempo de exibição do Toast</param>
         public string AdicionarMensagemToaster(string titulo, string mensagem, string icone, string posicao, int tempoExibicaoMilisegundos)
         {
             var sb = new StringBuilder();
@@ -61,16 +65,17 @@ namespace Wc.ToasterWebforms
         }
 
         /// <summary>
-        /// Adiciona uma mensagem Toaster. Baseado na Biblioteca Jquery Toast Plugin
-        /// https://kamranahmed.info/toast#quick-demos
+        /// <para>MENSAGEM TOAST</para>
+        /// <para>Baseado na Biblioteca Jquery Toast Plugin</para>
+        /// <para>https://kamranahmed.info/toast#quick-demos</para>
         /// </summary>
-        /// <param name="titulo">Propriedade: {heading} - Título da mensagem</param>
-        /// <param name="mensagem">Propriedade: {text} - Mensagem do corpo do Toaster.</param>
-        /// <param name="icone">Propriedade: {icon} - Define o ícone e cor do Toast use: info, warning, error, success</param>
-        /// <param name="posicao">Propriedade: {position} - Define posição da mensagem, use: bottom-left or bottom-right or bottom-center or top-left or top-right or top-center or mid-center or an object representing the left, right, top, bottom</param>
-        /// <param name="tempoExibicaoMilisegundos">Propriedade: {hideAfter} - Define o tempo de exibição do Toast</param>
-        /// <param name="exibirLoader">Propriedade: {loader} - Exibi o loader do tempo de exibição, use: true ou false</param>
-        /// <param name="corLoader">Propriedade: {loaderBg} - Define a cor do loader exemplo: "#9EC600"</param>
+        /// <param name="titulo"> ToastJs: {heading} - string: Titulo da mensagem.</param>
+        /// <param name="mensagem">ToastJs: {text} - string: Mensagem do corpo do Toaster.</param>
+        /// <param name="icone">ToastJs: {icon} - string: info ou warning ou error ou success</param>
+        /// <param name="posicao">ToastJs: {position} - string: bottom-left ou bottom-right ou bottom-center ou top-left ou top-right ou top-center ou mid-center ou an object representing the left, right, top, bottom</param>
+        /// <param name="tempoExibicaoMilisegundos">ToastJs: {hideAfter} - int: tempo de exibição do Toast</param>
+        /// <param name="exibirLoader">ToastJs: {loader} - bool: true ou false</param>
+        /// <param name="corLoader">ToastJs: {loaderBg} - string: exemplo "#9EC600"ou info ou warning ou error ou success</param>
 
         public string AdicionarMensagemToaster(string titulo, string mensagem, string icone, string posicao,
             int tempoExibicaoMilisegundos, bool exibirLoader, string corLoader)
@@ -89,17 +94,18 @@ namespace Wc.ToasterWebforms
         }
 
         /// <summary>
-        /// Adiciona uma mensagem Toaster. Baseado na Biblioteca Jquery Toast Plugin
-        /// https://kamranahmed.info/toast#quick-demos
+        /// <para>MENSAGEM TOAST</para>
+        /// <para>Baseado na Biblioteca Jquery Toast Plugin</para>
+        /// <para>https://kamranahmed.info/toast#quick-demos</para>
         /// </summary>
-        /// <param name="titulo">Propriedade: {heading} - Título da mensagem</param>
-        /// <param name="mensagem">Propriedade: {text} - Mensagem do corpo do Toaster.</param>
-        /// <param name="icone">Propriedade: {icon} - Define o ícone e cor do Toast use: info, warning, error, success</param>
-        /// <param name="posicao">Propriedade: {position} - Define posição da mensagem, use: bottom-left or bottom-right or bottom-center or top-left or top-right or top-center or mid-center or an object representing the left, right, top, bottom</param>
-        /// <param name="tempoExibicaoMilisegundos">Propriedade: {hideAfter} - Define o tempo de exibição do Toast</param>
-        /// <param name="exibirLoader">Propriedade: {loader} - Exibi o loader do tempo de exibição, use: true ou false</param>
-        /// <param name="corLoader">Propriedade: {} - Define a cor do loader exemplo: "#9EC600"</param>
-        /// <param name="alinhamentoTexto">Propriedade: {textAlign} - Define alinhamento do texto, use: left, right ou center</param>
+        /// <param name="titulo"> ToastJs: {heading} - string: Titulo da mensagem.</param>
+        /// <param name="mensagem">ToastJs: {text} - string: Mensagem do corpo do Toaster.</param>
+        /// <param name="icone">ToastJs: {icon} - string: info ou warning ou error ou success</param>
+        /// <param name="posicao">ToastJs: {position} - string: bottom-left ou bottom-right ou bottom-center ou top-left ou top-right ou top-center ou mid-center ou an object representing the left, right, top, bottom</param>
+        /// <param name="tempoExibicaoMilisegundos">ToastJs: {hideAfter} - int: tempo de exibição do Toast</param>
+        /// <param name="exibirLoader">ToastJs: {loader} - bool: true ou false</param>
+        /// <param name="corLoader">ToastJs: {loaderBg} - string: exemplo "#9EC600"ou info ou warning ou error ou success</param>
+        /// <param name="alinhamentoTexto">ToastJs: {textAlign} - string: left ou right ou center</param>
 
         public string AdicionarMensagemToaster(string titulo, string mensagem, string icone, string posicao,
             int tempoExibicaoMilisegundos, bool exibirLoader, string corLoader, string alinhamentoTexto)
@@ -119,19 +125,20 @@ namespace Wc.ToasterWebforms
         }
 
         /// <summary>
-        /// Adiciona uma mensagem Toaster. Baseado na Biblioteca Jquery Toast Plugin
-        /// https://kamranahmed.info/toast#quick-demos
+        /// <para>MENSAGEM TOAST</para>
+        /// <para>Baseado na Biblioteca Jquery Toast Plugin</para>
+        /// <para>https://kamranahmed.info/toast#quick-demos</para>
         /// </summary>
-        /// <param name="titulo">Propriedade: {heading} - Título da mensagem</param>
-        /// <param name="mensagem">Propriedade: {text} - Mensagem do corpo do Toaster.</param>
-        /// <param name="icone">Propriedade: {icon} - Define o ícone e cor do Toast use: info, warning, error, success</param>
-        /// <param name="posicao">Propriedade: {position} - Define posição da mensagem, use: bottom-left or bottom-right or bottom-center or top-left or top-right or top-center or mid-center or an object representing the left, right, top, bottom</param>
-        /// <param name="tempoExibicaoMilisegundos">Propriedade: {hideAfter} - Define o tempo de exibição do Toast</param>
-        /// <param name="exibirLoader">Propriedade: {loader} - Exibi o loader do tempo de exibição, use: true ou false</param>
-        /// <param name="corLoader">Propriedade: {loaderBg} - Define a cor do loader exemplo: "#9EC600"</param>
-        /// <param name="alinhamentoTexto">Propriedade: {textAlign} - Define alinhamento do texto, use: left, right ou center</param>
-        /// <param name="permitirFecharToast">Propriedade: {allowToastClose} - Permissao de fechar o Toast, use: true ou false</param>
-        /// <param name="maximoToastAbertoComEste">Propriedade: {stack} - Número que representando o máximo de toast abertos com este</param>
+        /// <param name="titulo"> ToastJs: {heading} - string: Titulo da mensagem.</param>
+        /// <param name="mensagem">ToastJs: {text} - string: Mensagem do corpo do Toaster.</param>
+        /// <param name="icone">ToastJs: {icon} - string: info ou warning ou error ou success</param>
+        /// <param name="posicao">ToastJs: {position} - string: bottom-left ou bottom-right ou bottom-center ou top-left ou top-right ou top-center ou mid-center ou an object representing the left, right, top, bottom</param>
+        /// <param name="tempoExibicaoMilisegundos">ToastJs: {hideAfter} - int: tempo de exibição do Toast</param>
+        /// <param name="exibirLoader">ToastJs: {loader} - bool: true ou false</param>
+        /// <param name="corLoader">ToastJs: {loaderBg} - string: exemplo "#9EC600"ou info ou warning ou error ou success</param>
+        /// <param name="alinhamentoTexto">ToastJs: {textAlign} - string: left ou right ou center</param>
+        /// <param name="permitirFecharToast">ToastJs: {allowToastClose} - bool: true ou false</param>
+        /// <param name="maximoToastAbertoComEste">ToastJs: {stack} - int: Número que representando o máximo de toast abertos com este</param>
 
         public string AdicionarMensagemToaster(string titulo, string mensagem, string icone, string posicao,
             int tempoExibicaoMilisegundos, bool exibirLoader, string corLoader, string alinhamentoTexto,
